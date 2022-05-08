@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PoupaDor</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/icons/icons8-favicon.png"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    
+  </head>
+
+  <body>
+    <div id="mobile-overlay" class="header__container-mobileMenu center">
+      <img
+        id="close-ico"
+        src="./assets/icons/icons8-x-50.png"
+        alt="close tab"
+      />
+      <ul>
+        <li><a href="#sobre">Sobre o projeto</a></li>
+        <li><a href="#perfil_financeiro">Perfil Financeiro</a></li>
+        <li><a href="#financeiro">Planejador de finanças</a></li>
+        <li><a href="#artigos">Artigos relevantes</a></li>
+        <li><a href="#sobrenos">Sobre nós</a></li>
+      </ul>
+    </div>
+
+    <header class="header__container center">
+          <div class="header__container-nav">
+            <a href="#" id="logo">PoupaDor</a>
+            <img id="bars-menu-btn" src="./assets/icons/bars.png" alt="bars menu" />
+              <div id="desktop-links" class="header__container-nav-itens">
+                <a href="#sobre">O projeto</a>
+                <a href="#perfil_financeiro">Perfil financeiro</a>
+                <a href="#financeiro">Planejador de finanças</a>
+                <a href="#artigos">Artigos relacionados</a>
+                <a href="#sobrenos">Sobre nós</a>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+    <div id="header-fix"></div>
+
+    <section id="introdução">
+      <div class="apresentação">
+        <div class="começar">
+            <div id="título_maior">
+              <p>Descubra como organizar <br> a sua vida financeira <br>com o PoupaDor<br></p>
+              <p id="subtítulo">
+              A maneira mais rápida e prática de controlar suas finanças
+              </p>
+            </div>
+          <div class="botão_começar">
+          <p>
+            <a href="#sobre"><button id="start" type="button">
+            Clique para começar!
+            </button></a>
+          </p>
+          </div>
+        </div>
+          <img src="./assets/porquinho_transparente.png" alt="porquinho" id="porquinho">
+    </div>
+  </section>
+
+    <section id="sobre" class="section__sobre center">
+          <div class="section__sobre-content">
+            <h3 class="title-text">SOBRE O POUPADOR</h3>
+            <p class="small-text">
+              O PoupaDor é um projeto desenvolvido para facilitar o seu planejamento financeiro. Entenda qual o seu perfil e receba dicas de como poupar dinheiro e organizar suas finanças. Vamos começar?
+            </p>
+          </div>
+          <div id="linha-vertical"></div>
+          <div class="section__sobre-img">
+            <img src="./assets/capa.png" alt="capa" />
+          </div>
+    </section>
+
+    <main id="perfil_financeiro" class="main__perfilfinanceiro center section-padding">
+      <div class="main__perfilfinanceiro-wrapper center-column">
+        <div id="tela-inicial" class="main__perfilfinanceiro-description">
+          <h3 class="title-text">TESTE O SEU PERFIL FINANCEIRO</h3>
+          <p class="small-text">
+            Entenda qual é o seu perfil financeiro e como agir para controlar
+            suas finanças. Faça o teste e descubra em qual grupo você se
+            encontra: Endividado, Equilibrado Financeiramente ou Investidor.
+            <img src="./assets/boneco_perfil-financeiro.png" alt="boneco" id="boneco">
+          </p>
+          
+          <button class="display-btn" id="iniciar-teste-btn" type="button">
+            Iniciar Teste
+          </button>
+        </div>
+        <div class="resultado">
+          <form id="form-pergunta" class="center-column">
+            <div class="form-pergunta-display">
+              <h3 id="form-pergunta-h3">Pergunta 1 / 10</h3>
+              <h2 id="form-pergunta-h2" class="title-text">Pergunta</h2>
+            </div>
+            <div class="main__perfilfinanceiro-form-actions center-column">
+              <button type="button" value="10" id="op1">respostas</button>
+              <button type="button" value="05" id="op2">respostas</button>
+              <button type="button" value="00" id="op3">respostas</button>
+            </div>
+        </div>
+        </form>
+        <section id="tela-resultado" class="main__perfilfinanceiro-resultado center">
+          <div class="main__perfilfinanceiro-resultado-wrapper">
+            <h3 id="perfil-h3" class="title-text">Perfil Investidor</h3><br><br>
+            <p id="perfil-descricao-p" class="small-text">Descrição</p><br>
+            <button class="display-btn" id="reiniciar-btn" type="button">
+              Refazer teste
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section id="financeiro" class="container__planejamentoFinanceiro section-padding center">
+      <div class="container__planejamentoFinanceiro-wrapper center">
+        <div id="planejamento-tela-principal" class="container__planejamentoFinanceiro-telaInicial">
+          <h3 class="title-text">PLANEJADOR FINANCEIRO</h3>
+          <p class="small-text">
+            Utilize a presente ferramenta para aprender a como gastar o seu dinheiro e que parcela investir. Insira o valor do seu salário liquido abaixo e vamos planejar!
+            <br><br>
+            <img src="./assets/planejamento-financeiro.png" alt="planejador" id="planejador_foto">
+          </p>
+          <form class="form__planejamentoFinanceiro" action="">
+            <button id="planejamento-btn-calcular" type="button" class="display-btn">
+              Calcular
+            </button>
+            <label htmlFor="salario">R$</label>
+            <input type="text" placeholder="Insira aqui seu salário" id="salario" value="" />
+          </form>
+        </div>
+        <div id="planejamento-resultados" class="container__planejamentoFinanceiro-resultados">
+          <div class="container__planejamentoFinanceiro-cards">
+            <div class="container__planejamentoFinanceiro-card center">
+              <div class="container__planejamentoFinanceiro-card-wrapper">
+                <h2 id="planejamento-resultado-50" class="title-text">
+                  Use Valor (50 %)
+                </h2>
+                <h3>Gastos Essenciais</h3>
+                <ul class="planejamento_itens">
+                  <li class="small-text">Aluguel</li>
+                  <li class="small-text">Alimentação</li>
+                  <li class="small-text">Educação</li>
+                  <li class="small-text">Saúde</li>
+                  <li class="small-text">Contas</li>
+                  <li class="small-text">Transporte</li>
+                </ul>
+              </div>
+            </div>
+            <div class="container__planejamentoFinanceiro-card center">
+              <div class="container__planejamentoFinanceiro-card-wrapper">
+                <h2 id="planejamento-resultado-30" class="title-text">
+                  Use Valor (30 %)
+                </h2>
+                <h3>Gastos Supérfluos e Desejos</h3>
+                <ul class="planejamento_itens">
+                  <li class="small-text">Viagens</li>
+                  <li class="small-text">Streaming</li>
+                  <li class="small-text">TV</li>
+                  <li class="small-text">Lazer</li>
+                  <li class="small-text">Produtos</li>
+                  <li class="small-text">Cinema</li>
+                </ul>
+              </div>
+            </div>
+            <div class="container__planejamentoFinanceiro-card center">
+              <div class="container__planejamentoFinanceiro-card-wrapper">
+                <h2 id="planejamento-resultado-20" class="title-text">
+                  Use Valor (20 %)
+                </h2>
+                <h3>Dívidas ou Investimentos</h3>
+                <ul class="planejamento_itens">
+                  <li class="small-text">Financiamentos</li>
+                  <li class="small-text">Empréstimos</li>
+                  <li class="small-text">Contas</li>
+                  <li class="small-text">Poupança</li>
+                  <li class="small-text">Investimentos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="button">
+            <button id="planejamento-btn-calcular-novamente" type="button" class="display-btn">
+              Calcular Novamente
+            </button>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="artigos" class="artigos section-padding center">
+      <div class="artigos__wrapper center-column">
+        <div class="conteudoTexto__artigos">
+          <h3 class="title-text">ARTIGOS RELACIONADOS</h3>
+          <p class="small-text">
+            Aqui você encontra vídeos e artigos relacionados ao mundo financeiro e economia, para que você aprenda mais e possa otimizar o seu planejamento.
+          </p>
+        </div>
+        <div class="conteudoVideo__artigos">
+          <div class="caixa center-column">
+            <iframe class="video__artigo" src="https://www.youtube.com/embed/NAlwBXUag1Y"          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen>
+            </iframe>
+            <p class="textoVideo__artigos">
+              <a href="https://www.youtube.com/embed/NAlwBXUag1Y">Plano para alcançar suas metas em 2022 - Canal Me Poupe!</a>
+            </p>
+          </div>
+          <div class="caixa center-column">
+            <iframe class="video__artigo" src="https://www.youtube.com/embed/dSLhykOui3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <p class="textoVideo__artigos">
+              <a href="https://www.youtube.com/embed/dSLhykOui3Y">Planejamento financeiro fácil com salário baixo - Canal Me Poupe!</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobrenos" class="section__sobrenos center">
+      <div class="section__sobrenos-wrapper center-column">
+        <h1>DESENVOLVEDORES</h1>
+        <div class="section__sobrenos-cards">
+          <div class="section__sobrenos-card">
+            <div class="section__sobrenos-card-content center-column">
+              <img src="./assets/devs/AntonioVictor.jpg" alt="dev Antonio Victor" />
+              <h2>Antonio Victor</h2>
+              <p>
+                Graduando em SI. Desenvolvedor JavaScript, React, HTML e CSS.
+                Futuro grande programador full-stack.
+              </p>
+            </div>
+            <div class="section__sobrenos-card-buttons">
+              <a target="_blank" href="https://www.linkedin.com/in/antonio-victor-oliveira-borges-4a2852228">
+                <img src="./assets/icons/linkedin-ico.png" alt="linkedin icon"/></a>
+              <a target="_blank" href="https://github.com/DevVictor19"
+                ><img src="./assets/icons/github-ico.png" alt="github icon"
+              /></a>
+            </div>
+          </div>
+          <div class="section__sobrenos-card">
+            <div class="section__sobrenos-card-content center-column">
+              <img src="./assets/devs/Eduardo.jpg" alt="dev Eduardo" />
+              <h2>Eduardo Orsi</h2>
+              <p>
+                Graduando em ADS pela Universidade Estácio de Sá. Desenvolvendo habilidades em HTML, CSS,
+                JavaScript e JAVA.
+              </p>
+            </div>
+            <div class="section__sobrenos-card-buttons">
+              <a target="_blank" href="https://www.linkedin.com/in/eduorsi/">
+                <img src="./assets/icons/linkedin-ico.png" alt="linkedin icon"/>
+              </a>
+              <a target="_blank" href="https://github.com/EduardoOrsi">
+                <img src="./assets/icons/github-ico.png" alt="github icon"/></a>
+            </div>
+          </div>
+          <div class="section__sobrenos-card">
+            <div class="section__sobrenos-card-content center-column">
+              <img src="./assets/devs/GiovannaHelena.jpg" alt="dev Giovanna Helena" />
+              <h2>Giovanna Helena</h2>
+              <p>Advogada e futura programadora full-stack. Aprimorando habilidades em HTML, CSS e Javascript.</p>
+            </div>
+            <div class="section__sobrenos-card-buttons">
+              <a target="_blank" href="https://www.linkedin.com/in/giovanna-helena-40167a239">
+                <img src="./assets/icons/linkedin-ico.png" alt="linkedin icon"/>
+            </a>
+              <a target="_blank" href="https://github.com/giohelena">
+                <img src="./assets/icons/github-ico.png" alt="github icon"/>
+            </a>
+            </div>
+          </div>
+          <div class="section__sobrenos-card">
+            <div class="section__sobrenos-card-content center-column">
+              <img src="./assets/devs/WalisonJesus.jpg" alt="dev Walison Jesus"/>
+              <h2>Walison Jesus</h2>
+              <p>
+                Graduando em ADS pela Estácio de Sá. Estudante de
+                desenvolvimento fullstack aprimorando as habilidades em HTML,
+                CSS e JavaScript.
+              </p>
+            </div>
+            <div class="section__sobrenos-card-buttons">
+              <a target="_blank" href="https://www.linkedin.com/in/walison-jesus-82aaba1b7/">
+                <img src="./assets/icons/linkedin-ico.png" alt="linkedin icon"/>
+              </a>
+              <a target="_blank" href="https://github.com/walisonjesus">
+                <img src="./assets/icons/github-ico.png" alt="github icon"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="center">
+      <p>® PoupaDor 2022</p>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="./js/perguntas-financeiro.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="./js/planejador-financeiro.js"
+      defer
+    ></script>
+    <script type="text/javascript" src="./js/mobile-menu.js" defer></script>
+  </body>
+</html>

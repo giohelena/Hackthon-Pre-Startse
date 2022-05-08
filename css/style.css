@@ -1,0 +1,1644 @@
+:root {
+  --verdefonte:#5f9d14;
+  --verdeEscuro: #0b4b2a;
+  --verdeMedio: #14a35b;
+  --verdeMedioFraco: #8dac45;
+  --verdeFraco: #78aa37;
+  --verdeMuitoFraco: #efefef;
+  --verdeBackground:#a8b19d;
+  --laranjaEscuro: #c4740c;
+  --laranjaFraco: #ffb52e;
+  --laranjaMuitoFraco: #fff4e0;
+  --vermelhoEscuro: #a70000;
+  --vermelhoFraco: #ff7b7b;
+  --vermelhoMuitoFraco: #ffbaba;
+  --sombra:#909090;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'PT Serif', serif;
+  max-width: 1800px;
+  height: 100vh;
+  width: 100vw;
+  background-image:linear-gradient(to left, var(--verdeBackground), transparent);
+  /*background-color:#dadbdd;*/
+}
+
+button,
+h1,
+h2,
+h3,
+p {
+  user-select: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--verdeMuitoFraco);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--verdeFraco);
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--verdeEscuro);
+}
+
+
+/* Classes globais */
+.section-padding {
+  padding: 22rem 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.small-text {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: justify;
+}
+
+.title-text {
+  font-size: 36px;
+  color:var(--verdefonte);
+  text-align:center;
+  font-weight: bold;
+}
+
+#header-fix {
+  width: 100vw;
+}
+
+.display-btn {
+  width: 280px;
+  height: 70px;
+  margin-top:60px;
+
+  font-family: inherit;
+  color: var(--verdeMedio);
+  font-size: 26px;
+
+  outline: none;
+  background-color: transparent;
+  border: 3px solid var(--verdeMedio);
+  border-radius: 12px;
+  cursor: pointer;
+
+  transition: 0.5s ease-out;
+}
+
+.display-btn:hover,
+.display-btn:active {
+  transition: 0.3s ease-in;
+
+  color: white;
+  background-color: var(--verdeFraco);
+  border: 3px solid var(--verdeFraco);
+}
+
+#close-ico {
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+}
+
+.header__container-mobileMenu {
+  position: fixed;
+  background-color: white;
+  padding: 50px 0;
+  width: 100vw;
+  display: none;
+  opacity: 0;
+  z-index: 99;
+  transition: 0.5s ease-in-out;
+}
+
+.header__container-mobileMenu ul {
+  text-align: center;
+}
+
+.header__container-mobileMenu ul li {
+  margin-bottom: 50px;
+}
+
+.header__container-mobileMenu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.header__container-mobileMenu ul li a:hover {
+  border-bottom: 3px solid var(--verdeEscuro);
+}
+
+#bars-menu-btn {
+  display: none;
+}
+
+.header__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--verdeFraco);
+  box-shadow: 0px 5px 5px 0px var(--sombra);
+  max-width: 1800px;
+  padding: 22px 0;
+  line-height: 30px;
+  display: flex;
+  flex-direction:row;
+}
+
+.header__container-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+#logo {
+  font-family: 'Koulen', cursive;
+  font-size: 46px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: var(--sombra) 0.1em 0.1em 0.2em;
+}
+
+#bars-menu-btn {
+  width: 30px;
+  cursor: pointer;
+}
+
+.header__container-nav-itens a {
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+}
+
+.header__container-nav-itens a:hover,
+.header__container-nav-itens a:active {
+  border-bottom: 3px solid white;
+}
+
+
+/*Sobre*/
+
+.apresentação{
+  font-family: 'Koulen', cursive;
+  font-size:40px;
+  font-weight:bolder;
+  line-height:60px;
+  color:var(--verdeEscuro);
+  text-align:center;
+  text-shadow: rgb(163, 161, 161) 0.1em 0.1em 0.2em;
+  width:auto;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  flex-wrap:nowrap;
+  align-items:center;
+  align-content:center;
+}
+
+#porquinho{
+  width:300px;
+}
+
+#subtítulo{
+  font-family: inherit;
+  font-size:20px;
+  font-weight:normal;
+  margin-top:10px;
+  margin-bottom:50px;
+}
+
+#porquinho{
+  width:27%;
+  margin-top:10px;
+}
+
+#start{
+  width: 400px;
+  height: 60px;
+  margin:auto;
+  
+  font-family:inherit;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  box-shadow: 5px 3px 5px 0px var(--sombra);
+  text-shadow: var(--sombra) 0.1em 0.1em 0.2em;
+
+  outline:none;
+  background-color: var(--verdefonte);
+  border: 3px solid var(--verdefonte);
+  border-radius: 12px;
+  cursor:pointer;
+
+  transition: 0.5s ease-out;
+}
+
+.section__sobre {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding: 150px;
+  margin:50px;
+  background-color:var(--verdeMuitoFraco);
+  box-shadow: 5px 3px 5px 0px var(--sombra);
+}
+
+.section__sobre-content {
+  width: 400px;
+}
+
+.section__sobre-content h3 {
+  margin-bottom: 20px;
+}
+
+.section__sobre-img img {
+  object-fit: cover;
+  width: 450px;
+}
+
+#linha-vertical{
+  height: 200px;
+  border-right: 3px solid var(--verdefonte);
+}
+
+
+/* Perfil financeiro */
+
+.main__perfilfinanceiro {
+  margin:50px;
+  padding:150px;
+  background-color: var(--verdeMuitoFraco);
+  background-color:var(--verdeMuitoFraco);
+  box-shadow: 5px 3px 5px 0px var(--sombra);
+  text-align:center;
+}
+
+.main__perfilfinanceiro-description {
+  width: 900px;
+  display:block;
+}
+
+.main__perfilfinanceiro-description h3 {
+  margin-bottom: 30px;
+}
+
+#form-pergunta {
+  display: none;
+  padding: 30px;
+}
+
+.form-pergunta-display {
+  width: 800px;
+  padding: 20px 10px;
+}
+
+.form-pergunta-display h3 {
+  margin-bottom: 10px;
+}
+
+.main__perfilfinanceiro-form-actions button {
+  width: 800px;
+  height: 80px;
+  margin-top: 30px;
+
+  font-family: inherit;
+  color: var(--verdeMedio);
+  font-size: 26px;
+
+  outline: none;
+  background-color: transparent;
+  border: 3px solid var(--verdeMedio);
+  border-radius: 12px;
+  cursor: pointer;
+
+  transition: 0.5s ease-out;
+}
+
+.main__perfilfinanceiro-resultado {
+  width: 700px;
+  padding: 30px;
+  display: none;
+}
+
+#boneco{
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto
+}
+
+
+/*Planejador financeiro*/
+
+.container__planejamentoFinanceiro {
+  background-color: var(--verdeMuitoFraco);
+  padding:70px;
+  margin:50px;
+  background-color:var(--verdeMuitoFraco);
+  box-shadow: 5px 3px 5px 0px var(--sombra);
+}
+
+.container__planejamentoFinanceiro-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container__planejamentoFinanceiro-telaInicial {
+  width: 900px;
+  display: block;
+  padding: 30px;
+}
+
+.container__planejamentoFinanceiro-telaInicial h3 {
+  margin-bottom: 30px;
+}
+
+#planejador_foto{
+  width:50%;
+  padding-top:20px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto
+}
+
+.form__planejamentoFinanceiro {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__planejamentoFinanceiro input[type="text"] {
+  border: none;
+  border-radius: 12px;
+  outline: none;
+
+  font-family: inherit;
+  text-align: center;
+  font-size: 26px;
+
+  margin-top: 30px;
+  width: 380px;
+  height: 70px;
+
+  color: white;
+  background-color: var(--verdeFraco);
+}
+.form__planejamentoFinanceiro input::placeholder {
+  color: white;
+}
+
+.container__planejamentoFinanceiro-resultados {
+  width: 80%;
+  display:none;
+}
+
+.container__planejamentoFinanceiro-cards {
+  width: 100%;
+  height:100%;
+  padding-top:40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__planejamentoFinanceiro-card {
+  width: 300px;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.container__planejamentoFinanceiro-card ul li {
+  font-size: 20px;
+}
+
+.container__planejamentoFinanceiro-card:nth-child(1) {
+  border: 3px solid var(--verdeFraco);
+  color: var(--verdeMedio);
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container__planejamentoFinanceiro-card:nth-child(2) {
+  background-color: var(--laranjaMuitoFraco);
+  border: 3px solid var(--laranjaFraco);
+  color: var(--laranjaFraco);
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container__planejamentoFinanceiro-card:nth-child(3) {
+  background-color: var(--vermelhoMuitoFraco);
+  border: 3px solid var(--vermelhoFraco);
+  color: var(--vermelhoEscuro);
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container__planejamentoFinanceiro-card h2 {
+  margin-bottom: 10px;
+}
+
+.container__planejamentoFinanceiro-card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*Artigos*/
+
+.artigos {
+  background-color: var(--verdeMedioFraco);
+  padding:70px;
+  margin:50px;
+  background-color:var(--verdeMuitoFraco);
+  box-shadow: 5px 3px 5px 0px var(--sombra);
+}
+
+.conteudoTexto__artigos {
+  width: 900px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.conteudoTexto__artigos h3 {
+  margin-bottom: 30px;
+}
+
+.conteudoVideo__artigos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.video__artigo {
+  width: 400px;
+  height: 240px;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+.textoVideo__artigos {
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+
+/* Sobre nós */
+
+.section__sobrenos {
+  padding-top:40px;
+  padding-bottom:40px;
+  margin:50px;
+  display:flex;
+  flex-direction:row;
+  text-align:center;
+  background-color: rgb(22, 21, 21);
+  box-shadow: 5px 3px 5px 0px var(--sombra);
+}
+
+.section__sobrenos-wrapper {
+  width: 80%;
+}
+
+.section__sobrenos-wrapper h1 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.section__sobrenos-cards {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__sobrenos-card {
+  width: 220px;
+  height: 400px;
+  padding: 10px 20px 5px;
+
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__sobrenos-card-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.section__sobrenos-card-content h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.section__sobrenos-card-content p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.section__sobrenos-card-buttons img {
+  width: 50px;
+}
+
+
+/* Footer */
+footer{
+  background-color: var(--verdeFraco);
+  width: auto;
+  height: 70px;
+  
+}
+
+footer p {
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsivo 
+
+1600px*/
+
+@media screen and (min-width: 1600px) {
+  .small-text {
+    font-size: 22px;
+  }
+
+  .title-text {
+    font-size: 36px;
+  }
+
+  .section-padding {
+    padding: 24rem 0;
+  }
+
+  .header__container {
+    padding: 36px 0;
+    line-height: 32px;
+  }
+
+  #logo {
+    font-size: 50px;
+  }
+
+  .header__container-nav-itens a {
+    font-size: 22px;
+  }
+
+  #apresentação{
+    margin:auto;
+    padding:auto;
+    font-size:50px;
+  }
+
+  .section__sobre {
+    padding: 150px;
+  }
+
+  .section__sobrenos-wrapper h1 {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+
+  .main__perfilfinanceiro{
+    margin:50px;
+    padding:140px;
+  }
+
+  .container__planejamentoFinanceiro{
+    padding:90px;
+    margin:60px;
+  }
+
+  #planejamento-btn-calcular{
+    margin-top:35px
+  }
+
+  #artigos{
+    padding:90px;
+    margin:50px;
+  }
+
+  .section__sobrenos-card {
+    width: 300px;
+    height: 490px;
+    margin:10px;
+  }
+
+  .section__sobrenos-card-content img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .section__sobrenos-card-content h2 {
+    font-size: 28px;
+  }
+
+  .section__sobrenos-card-content p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
+}
+
+/*1300*/
+
+@media screen and (max-width: 1300px) {
+  .small-text {
+    font-size: 19px;
+  }
+
+  #introdução{
+    margin-top:90px;
+  }
+
+  .section__sobre-img img {
+    width: 450px;
+  }
+
+  .container__planejamentoFinanceiro-card{
+    margin-left:40px;
+  }
+
+  .conteudoVideo__artigos {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+  }
+
+  .video__artigo {
+    width:300px;
+  }
+
+  .section__sobrenos-cards {
+    padding:20px;
+  }
+
+  .section__sobrenos-card {
+    height: 450px;
+    margin:15px;
+  }
+}
+
+/*1070*/
+
+@media screen and (max-width: 1070px) {
+  #logo {
+    font-size: 34px;
+  }
+
+
+  .header__container-nav-itens a {
+    font-size: 18px;
+  }
+
+  .form-pergunta-display {
+    width: 765px;
+  }
+
+  .form-pergunta-display h2 {
+    font-size: 28px;
+  }
+
+  .section__sobre-img{
+    display:none;
+  }
+
+  #linha-vertical{
+    display:none;
+  }
+
+  .section__sobre-content{
+    width:100%;
+    height:100%;
+  }
+
+  .main__perfilfinanceiro-form-actions button {
+    width: 765px;
+    font-size: 24px;
+  }
+
+  .container__planejamentoFinanceiro-cards {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container__planejamentoFinanceiro-card {
+    width: 400px;
+    padding: 30px 10px;
+    margin-bottom: 50px;
+  }
+
+  .section__sobrenos-cards{
+    margin-right:160px;
+  }
+}
+
+
+/*1025*/
+
+@media screen and (max-width: 1025px) {
+  .small-text {
+    font-size: 22px;
+  }
+
+  #porquinho{
+    width:300px;
+  }
+
+  #apresentação{
+    margin:50px;
+    padding-left:120px;
+  }
+
+  #subtítulo{
+    margin-top:40px;
+    line-height: 30px;
+  }
+
+  #bars-menu-btn {
+    display: block;
+  }
+
+  .header__container {
+    padding: 20px 0;
+  }
+
+  .header__container-nav-itens {
+    display: none;
+  }
+
+  .section__sobrenos-cards{
+    padding:10px;
+  }
+}
+
+/*900*/
+
+@media screen and (max-width: 900px) {
+
+  .header__container-mobileMenu {
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    padding: 36px 0;
+    line-height: 32px;
+  }
+
+  #close-ico{
+    margin-right:20px;
+  }
+
+  .main__perfilfinanceiro{
+    height:550px;
+  }
+
+  .main__perfilfinanceiro-wrapper{
+    height:100px;
+  }
+
+  .main__perfilfinanceiro-description{
+    padding-bottom:50px;
+    width:90%;
+  }
+
+  .form-pergunta-display {
+    width: 718px;
+  }
+
+  .main__perfilfinanceiro-form-actions button {
+    width: 700px;
+    font-size: 22px;
+  }
+
+  .container__planejamentoFinanceiro{
+    height:800px;
+  }
+
+  .container__planejamentoFinanceiro-telaInicial{
+    padding-left:10px;
+    padding-top:200px;
+    padding-bottom:200px;
+    width:90%;
+  }
+
+  .container__planejamentoFinanceiro-card{
+    height:400px;
+    width:250px;
+  }
+
+  .container__planejamentoFinanceiro-cards{
+   display: flex;
+   flex-direction: row;
+  }
+
+  .container__planejamentoFinanceiro-card-wrapper{
+    padding-top:20px;
+    text-align: center;
+    height:400px;
+    width:190px;
+  }
+
+  #planejamento-btn-calcular{
+    width:200px;
+    margin-top:32px;
+  }
+
+  #planejador_foto{
+    width:400px;
+    padding-bottom:30px;
+  }
+
+  .display-btn{
+    margin-top:10px;
+  }
+
+  #artigos{
+    height:1000px;
+  }
+
+  .conteudoTexto__artigos{
+    width:90%;
+    padding-left:10px;
+  }
+
+  .caixa{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+  }
+
+  .video__artigo{
+    height:50%;
+    width:70%;
+  }
+
+  .textoVideo__artigos{
+    width:400px;
+  }
+
+  .section__sobrenos-cards{
+    display:flex;
+    flex-direction:column;
+    margin-left:200px;
+  }
+
+  .section__sobrenos-card{
+    width:500px;
+    height:350px;
+  }
+}
+
+
+/*765*/
+
+@media screen and (max-width: 765px) {
+  .title-text {
+    font-size: 30px;
+  }
+
+  .header__container{
+    position:fixed;
+    width:100%;
+  }
+
+  .header__container-nav {
+    position:fixed;
+  }
+
+  #close-ico{
+    margin-right:50px;
+  }
+
+  #logo{
+    font-size:30px;
+  }
+
+  #porquinho{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%; 
+  }
+
+  .section__sobre{
+    height:550px;
+  }
+
+  .main__perfilfinanceiro{
+    height:800px;
+    padding:30px;
+  }
+
+  .main__perfilfinanceiro-form-actions button {
+    width: 600px;
+    font-size: 20px;
+  }
+
+  #form-pergunta-h2{
+    font-size:20px;
+    width:100%;
+  }
+
+  .main__perfilfinanceiro-resultado {
+    width: 600px;
+  }
+
+  .container__planejamentoFinanceiro{
+    height:800px;
+  }
+
+  .container__planejamentoFinanceiro-telaInicial {
+    width: 600px;
+  }
+  
+  .form__planejamentoFinanceiro input[type="text"] {
+    width: 280px;
+    font-size: 24px;
+  }
+
+  .container__planejamentoFinanceiro-card{
+    width:210px;
+    height:430px;
+    margin:4px;
+  }
+
+  .container__planejamentoFinanceiro-cards{
+    justify-content: space-evenly;
+  }
+
+  .container__planejamentoFinanceiro-card-wrapper{
+    width:120%;
+  }
+  
+  #planejamento-btn-calcular-novamente{
+    margin-top:40px;
+  }
+
+  #artigos{
+    height:800px;
+  }
+
+  .caixa{
+    display:flex;
+    flex-direction:row;
+  }
+
+  .textoVideo__artigos{
+    width:40%;
+  }
+
+  .video__artigo {
+    width: 300px;
+  }
+
+  #sobrenos{
+    height:1800px;
+  }
+}
+
+
+/*min 765*/
+
+@media screen and (min-width: 765px) {
+  .main__perfilfinanceiro-form-actions button:hover,
+  .main__perfilfinanceiro-form-actions button:active {
+    transition: 0.3s ease-in;
+
+    color: white;
+    background-color: var(--verdeFraco);
+    border: 3px solid var(--verdeFraco);
+  }
+
+  .header__container{
+    padding-bottom:40px;
+  }
+}
+
+
+/*650*/
+
+@media screen and (max-width: 650px) {
+  .header__container{
+    position:fixed;
+    height:70px;
+  }
+
+  #close-ico{
+    margin-right:70px;
+  }
+
+  #título_maior{
+    padding-top:40px;
+    font-size:30px;
+  }
+
+  #subtítulo{
+    margin:50px;
+  }
+
+  #logo{
+    font-size:40px;
+  }
+
+
+  #start{
+    font-size:20px;
+    width:300px;
+  }
+
+  #porquinho{
+    width:250px;
+  }
+
+  #sobre{
+    height:500px;
+    padding-left:40px;
+    padding-right:40px;
+  }
+
+  #op1{
+    width:500px;
+    height:100px;
+  }
+
+  #op2{
+    width:500px;
+    height:100px;
+  }
+
+  #op3{
+    width:500px;
+    height:100px;
+  }
+
+  .main__perfilfinanceiro-form-actions{
+    width:30px;
+    padding-left:250px;
+  }
+
+  .main__perfilfinanceiro-resultado-wrapper{
+    width:470px;
+    padding-left:40px;
+  }
+
+  .form-pergunta-display {
+    width: 518px;
+  }
+
+  .main__perfilfinanceiro-form-actions button {
+    width: 600px;
+  }
+
+  .container__planejamentoFinanceiro-telaInicial {
+    width: 500px;
+  }
+  .form__planejamentoFinanceiro input[type="text"] {
+    width: 260px;
+    font-size: 22px;
+  }
+
+  #planejamento-btn-calcular-novamente{
+    width:350px;
+    }
+
+  .conteudoTexto__artigos {
+    width: 500px;
+  }
+
+  .video__artigo {
+    width: 200px;
+  }
+
+  #sobrenos{
+    height:1900px;
+    padding-right:40px;
+  }
+}
+
+
+/*550*/
+
+@media screen and (max-width: 550px) {
+  .header__container{
+    position:fixed;
+    width:100%;
+  }
+
+  .header__container-nav{
+    position:fixed;
+    width:100%;
+  }
+
+  .apresentação{
+    display:flex;
+    flex-direction:column;
+  }
+
+  #sobre{
+    height:500px;
+    padding:0px;
+  }
+
+  .section__sobre-content{
+    padding-top:100px;
+    padding-left:70px;
+    width:80%;
+    text-align: justify;
+  }
+
+  #porquinho{
+    width:190px;
+  }
+
+  .main__perfilfinanceiro-form-actions{
+    width:20px;
+    padding-left:250px;
+  }
+
+  #form-pergunta-h2{
+    max-width: 400px;
+    padding-left:80px;
+  }
+
+  #op1{
+    width:400px;
+    height:150px;
+  }
+
+  #op2{
+    width:400px;
+    height:150px;
+  }
+
+  #op3{
+    width:400px;
+    height:130px;
+  }
+
+  .main__perfilfinanceiro-resultado-wrapper{
+    width:430px;
+    margin-left:45px;
+  }
+
+  #financeiro{
+    height:1000px;
+  }
+
+  .container__planejamentoFinanceiro-telaInicial{
+    width:130%;
+  }
+
+  #planejador_foto{
+    width:100%
+  }
+
+  .form__planejamentoFinanceiro{
+    flex-direction: column;
+  }
+
+  .form__planejamentoFinanceiro input[type="text"] {
+    width: 300px;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .form__planejamentoFinanceiro button {
+    margin-top: 0;
+    width: 300px;
+  }
+
+  .container__planejamentoFinanceiro-resultados{
+    margin-right:100px;
+  }
+
+  .container__planejamentoFinanceiro-cards{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+  }
+
+  .container__planejamentoFinanceiro-card {
+    width: 300px;
+    height:200px;
+  }
+
+  .container__planejamentoFinanceiro-card-wrapper{
+    width:500px;
+    height:100px;
+  }
+
+  .planejamento_itens{
+    display:none;
+  }
+
+  #artigos{
+    height:800px;
+  }
+
+  .textoVideo__artigos {
+    font-size: 16px;
+    width:280px;
+  }
+
+  .conteudoTexto__artigos {
+    width: 430px;
+    margin-bottom: 50px;
+  }
+
+  .video__artigo {
+    width: 180px;
+    height:100px;
+  }
+  
+  .section__sobrenos{
+    height:1800px;
+  }
+
+  .section__sobrenos-card {
+    width: 330px;
+    height: 380px;
+  }
+}
+
+
+/*440*/
+
+@media screen and (max-width: 440px) {
+  .header__container{
+    position:fixed;
+    width:100%;
+  }
+
+  #logo{
+    padding-top:10px;
+    font-size:40px;
+  }
+
+  #bars-menu-btn{
+    margin-right:50px;
+
+  }
+
+  #close-ico{
+    margin-right:20px;
+  }
+
+  #título_maior{
+    padding-top:50px;
+    font-size:25px;
+    line-height: 30px;
+  }
+
+  #subtítulo{
+    font-size:17px;
+  }
+
+  #porquinho{
+    width:150px;
+  }
+
+  #start{
+    font-size:17px;
+    width:190px;
+  }
+
+  .section__sobre-content{
+    width:160%;
+    padding-right:50px;
+    padding-left:40px;
+    font-size:19px;
+  }
+
+  .title-text{
+    font-size:25px;
+  }
+
+  .main__perfilfinanceiro-description {
+    width:90%;
+    padding-right:30px;
+    padding-top:50px;
+  }
+
+  #form-pergunta-h3{
+    padding-left:90px;
+  }
+
+  .form-pergunta-display {
+    width: 398px;
+  }
+
+  .main__perfilfinanceiro{
+    padding-right:130px;
+  }
+
+  #op1{
+    width:300px;
+    height:100px;
+  }
+
+  #op2{
+    width:300px;
+    height:100px;
+  }
+
+  #op3{
+    width:300px;
+    height:100px;
+  }
+
+  .main__perfilfinanceiro-description{
+    padding-left:110px;
+  }
+
+  #boneco{
+    width:300px;
+    padding-right:30px;
+  }
+
+  .main__perfilfinanceiro-description .small-text{
+    font-size:19px;
+  }
+
+  .main__perfilfinanceiro-form-actions button {
+    width: 300px;
+    font-size:15px;
+  }
+
+  #reiniciar-btn{
+    width:210px;
+  }
+  
+  .container__planejamentoFinanceiro-telaInicial .small-text {
+    width: 280px;
+    padding-right:50px;
+    font-size:19px;
+  }
+
+  #planejador_foto{
+    width:250px;
+  }
+
+  #planejamento-btn-calcular-novamente{
+    width:250px;
+  }
+
+  .main__perfilfinanceiro-resultado .small-text{
+    font-size:19px;
+    padding-left:90px;
+  }
+
+  #perfil-h3{
+    padding-left:80px;
+  }
+
+  .container__planejamentoFinanceiro-card{
+    width:240px;
+  }
+
+  .conteudoTexto__artigos .small-text{
+    width: 350px;
+    padding-left:55px;
+    font-size:19px;
+  }
+
+  .video__artigo {
+    width: 130px;
+  }
+
+  .caixa{
+    width:370px;
+    font-size:14px;
+  }
+
+  h1{
+    font-size:25px;
+  }
+
+  .section__sobrenos{
+    padding-top:150px;
+  }
+
+  .section__sobrenos h1{
+    padding-left:30px;
+  }
+
+  .section__sobrenos-card {
+    width: 300px;
+    height: 360px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+/*375*/
+
+@media screen and (max-width: 375px) {
+
+  #close-ico{
+    margin-right:10px;
+  }
+
+  .title-text{
+    font-size:20px;
+  }
+
+  .apresentação{
+    display:flex;
+    flex-direction:column;
+    padding-top:0px;
+  }
+
+  #subtítulo{
+    width:360px;
+    line-height:35px;
+    font-size:18px;
+  }
+
+  #porquinho{
+    width:200px;
+  }
+
+  #start{
+    width:280px;
+    font-size:22px;
+  }
+
+  #sobre{
+    height:450px;
+  }
+
+  .section__sobre-content {
+    width: 110%;
+    padding-top:40px;
+    padding-left:20px;
+    padding-right:50px;
+  }
+
+  .main__perfilfinanceiro-description{
+    padding-left:110px;
+    width:110%;
+  }
+
+  #boneco{
+    width:95%;
+  }
+
+  .main__perfilfinanceiro-form-actions{
+    padding-right:30px;
+  }
+
+  #iniciar-teste-btn{
+    width:210px;
+  }
+
+  #op1{
+    width:210px;
+    height:150px;
+    margin-right:150px;
+  }
+
+  #op2{
+    width:210px;
+    height:150px;
+    margin-right:150px;
+  }
+
+  #op3{
+    width:210px;
+    height:150px;
+    margin-right:150px;
+  }
+
+  #iniciar-teste-btn{
+    margin-top:40px;
+    height:50px;
+  }
+
+  .form-pergunta-display {
+    width: 298px;
+  }
+
+  .form-pergunta-display h2 {
+    font-size: 22px;
+  }
+  
+  .main__perfilfinanceiro-form-actions button {
+    width: 100px;
+    font-size: 18px;
+    height: 0px;
+    margin-left:35px;
+  }
+
+  #reiniciar-btn{
+    width:200px;
+    height:50px;
+    font-size:19px;
+    margin-left:60px;
+  }
+
+  .container__planejamentoFinanceiro-telaInicial {
+    width: 320px;
+    padding-left:40px;
+  }
+
+  .form__planejamentoFinanceiro input[type="text"] {
+    width: 250px;
+    font-size: 20px;
+  }
+
+  .form__planejamentoFinanceiro button {
+    width: 250px;
+  }
+
+  .container__planejamentoFinanceiro-card {
+    width: 200px;
+    margin-top:30px;
+  }
+
+  #planejamento-btn-calcular-novamente{
+    width:200px;
+    font-size:20px;
+  }
+
+  .conteudoTexto__artigos .small-text {
+    width: 320px;
+    padding-left:60px;
+  }
+
+  .video__artigo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .caixa{
+    width:320px;
+  }
+
+  #sobrenos{
+    width:280px;
+  }
+
+  .section__sobrenos-wrapper{
+    font-size:10px;
+  }
+
+  .section__sobrenos-wrapper h1{
+    font-size:20px;
+  }
+
+  .section__sobrenos-card {
+    width: 240px;
+    height: 380px;
+  }
+}
